@@ -1,0 +1,8 @@
+<h1>Dogs Index</h1>
+
+<% @dogs.each do |doggy| %>
+  <p>
+    <%= link_to doggy.name, doggy %>
+    <%# `doggy` in link_to becomes "/dogs/#{doggy.id}" %>
+  </p>
+<% end %>
